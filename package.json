@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/acestojanoski/password-encryption-tool.git"
+    "url": "git+https://github.com/acestojanoski/password-encryption-tool.git"
   },
   "author": "Aleksandar Stojanoski",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/acestojanoski/password-encryption-tool/issues"
+    "url": "https://github.com/acestojanoski/password-encryption-tool/issues"
   },
-  "homepage": "https://gitlab.com/acestojanoski/password-encryption-tool#readme",
+  "homepage": "https://github.com/acestojanoski/password-encryption-tool#readme",
   "dependencies": {
     "async": "^2.6.1",
     "bcrypt": "^3.0.3"
