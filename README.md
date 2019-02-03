@@ -13,7 +13,7 @@
         <p>Tool for generating password hash, and verifying passwords</p>
         <h2>Usage</h2>
         <p>First step: clone this repository:
-            <span class="command"> git clone https://gitlab.com/acestojanoski/password-encryption-tool.git</span>, 
+            <span style="font-weight: bold"> git clone https://gitlab.com/acestojanoski/password-encryption-tool.git</span>, 
             and go to the new created direcoty: <span class="command">cd password-encryption-tool</span>
         </p>
         <p>Second step: <span class="command">npm install</span>, to install the required packages</p>
