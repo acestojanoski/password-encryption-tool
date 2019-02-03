@@ -6,27 +6,23 @@ const readline = require('readline')
         output: process.stdout
     });
 
-let userInputs = {};
-
 async.series([
     next => {
         readline.question('Enter your password: ', password => {
-            userInputs.password = password;
-            next();
+            next(null, password);
         });
     },
     next => {
         readline.question('Enter your hash: ', hash => {
-            userInputs.hash = hash;
-            next();
+            next(null, hash);
         });
     },
-], () => {
+], (err, inputs) => {
     readline.close();
 
     bcrypt.compare(
-        userInputs.password,
-        userInputs.hash,
+        inputs[0],
+        inputs[1],
         (err, result) => {
             if (err) {
                 console.error('\x1b[31m', err.message);
