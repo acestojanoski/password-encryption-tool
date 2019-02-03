@@ -10,14 +10,14 @@ const readline = require('readline')
 readline.question('Enter the password that you want to hash: ', (password) => {
     bcrypt.genSalt(saltRounds, (err, salt) => {
         if (err) {
-            console.error('Error with generating Salt');
+            console.error('\x1b[31m', 'Error with generating Salt');
         }
 
         bcrypt.hash(password, salt, (err, hash) => {
             if (err) {
-                console.error('Error with hashing password');
+                console.error('\x1b[31m', 'Error with hashing password');
             }
-            console.log('Hashed password: ' + hash);
+            console.log('\x1b[32m', 'Hashed password: ' + hash);
         });
     });
 

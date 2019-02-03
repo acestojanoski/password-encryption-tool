@@ -29,13 +29,13 @@ async.series([
         userInputs.hash,
         (err, result) => {
             if (err) {
-                console.error(err.message);
+                console.error('\x1b[31m', err.message);
             }
 
             if (result) {
-                console.log('\x1b[32m', 'Password and hash are matching!');
+                console.log('\x1b[32m', 'The password and the hash are matching!');
             } else {
-                console.log('\x1b[31m', 'Password and hash are not matching!');
+                console.log('\x1b[31m', 'The password and the hash are not matching!');
             }
         
         }
