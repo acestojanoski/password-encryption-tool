@@ -4,8 +4,8 @@
   "description": "Tool for password encryption and verifying passwords",
   "main": "app.js",
   "scripts": {
-    "generate": "node generate-password-hash.js",
-    "verify": "node verify-password.js",
+    "generate": "node tools/generate-password-hash.js",
+    "verify": "node tools/verify-password.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://gitlab.com/acestojanoski/password-encryption-tool#readme",
   "dependencies": {
+    "async": "^2.6.1",
     "bcrypt": "^3.0.3"
   }
 }

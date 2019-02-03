@@ -4,7 +4,6 @@
     </head>
     <body>
         <h1>Password encryption tool</h1>
-        <br />
         <h2>Description</h2>
         <p>Tool for generating password hash, and verifying passwords</p>
         <h2>Usage</h2>
