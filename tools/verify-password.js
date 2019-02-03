@@ -6,18 +6,18 @@ const readline = require('readline')
         output: process.stdout
     });
 
-let answers = {};
+let userInputs = {};
 
 async.series([
     next => {
         readline.question('Enter your password: ', password => {
-            answers.password = password;
+            userInputs.password = password;
             next();
         });
     },
     next => {
         readline.question('Enter your hash: ', hash => {
-            answers.hash = hash;
+            userInputs.hash = hash;
             next();
         });
     },
@@ -25,8 +25,8 @@ async.series([
     readline.close();
 
     bcrypt.compare(
-        answers.password,
-        answers.hash,
+        userInputs.password,
+        userInputs.hash,
         (err, result) => {
             if (err) {
                 console.error(err.message);
