@@ -1,0 +1,24 @@
+{
+  "name": "password-encryption-tool",
+  "version": "1.0.0",
+  "description": "Tool for password encryption and verifying passwords",
+  "main": "app.js",
+  "scripts": {
+    "generate": "node generate-password-hash.js",
+    "verify": "node verify-password.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/acestojanoski/password-encryption-tool.git"
+  },
+  "author": "Aleksandar Stojanoski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/acestojanoski/password-encryption-tool/issues"
+  },
+  "homepage": "https://gitlab.com/acestojanoski/password-encryption-tool#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.3"
+  }
+}
